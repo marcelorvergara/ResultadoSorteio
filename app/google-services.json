@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "139598118349",
+    "firebase_url": "https://sorteio-c520b.firebaseio.com",
+    "project_id": "sorteio-c520b",
+    "storage_bucket": "sorteio-c520b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139598118349:android:74b425a23286c457ec9884",
+        "android_client_info": {
+          "package_name": "com.sisbras.resultadosorteio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139598118349-nm9ol2bn61idqo9grlt5n2lnkvde9dkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUiBqKgv22AgO22iVPNiMtVIJFSzxgyNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139598118349-nm9ol2bn61idqo9grlt5n2lnkvde9dkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

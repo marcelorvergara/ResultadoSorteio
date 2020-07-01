@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/yatra_one"
+        android:text="Resultado dos Sorteios"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResultados"
+        android:layout_width="320dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:fadeScrollbars="true"
+        android:outlineProvider="bounds"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9349248892305112/9813451939"
+        ads:layout_constraintHorizontal_bias="0.494"
+        ads:layout_constraintTop_toBottomOf="@+id/btnDesenv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDesenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/yatra_one"
+        android:padding="12dp"
+        android:text="Fale com o desenvolvedor"
+        android:textColor="@color/browser_actions_bg_grey"
+        app:layout_constraintEnd_toEndOf="@+id/rvResultados"
+        app:layout_constraintTop_toBottomOf="@+id/rvResultados" />
+</androidx.constraintlayout.widget.ConstraintLayout>
